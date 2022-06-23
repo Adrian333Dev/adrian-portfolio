@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+@import 'animate.css';
+
+.MuiTypography-root {
+	font-family: 'Open Sans', sans-serif !important;
+}
+.MuiDivider-root::after,
+.MuiDivider-root::before {
+	border-color: white !important;
+}
+
+// ! Animate.css
+
+.fade-down {
+	animation: fadeInDownBig;
+	animation-duration: 1s;
+}
+
+.fade-right {
+	opacity: 0;
+	animation: fadeInLeft 1s 1.25s;
+	animation-fill-mode: forwards;
+}
+
+// ! ends .
+
+.link {
+	transition: all 1s ease-in-out !important;
+}
+
+@font-face {
+	font-family: 'redwing-light';
+	src: local('Redwing-Light'),
+		url('../fonts/Redwing-Light.otf') format('opentype');
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'redwing-medium';
+	src: local('Redwing-Medium'),
+		url('../fonts/Redwing-Medium.otf') format('opentype');
+	font-weight: 500;
+}
+
+.redwing-light {
+	font-family: 'redwing-light' !important;
+}
+.redwing-medium {
+	font-family: 'redwing-medium' !important;
+}
+
+// ! skill logos
+.html {
+	* {
+		color: #e34c26;
+	}
+}
+.css {
+	* {
+		color: #264de4;
+	}
+}
+.sass {
+	* {
+		color: #cc6699;
+	}
+}
+.logo {
+	width: 30px;
+}
+

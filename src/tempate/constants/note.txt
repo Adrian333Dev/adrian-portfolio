@@ -1,0 +1,14 @@
+
+
+
+const [y, setY] = useState(window.scrollY);
+	const handleScroll = () => setY(window.scrollY);
+
+	useEffect(() => {
+		window.addEventListener('scroll', handleScroll);
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	}, []);
+
+  sx={{ backgroundPositionY: `-${y * 0.25}px` }}
